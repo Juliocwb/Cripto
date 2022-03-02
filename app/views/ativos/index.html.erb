@@ -1,0 +1,10 @@
+<h1> test Index ativos </h1>
+
+<% @ativos.each do |s| %>
+  <%= s.name %> - <%= s.qtd %> - <%= s.valor %>
+  <%= link_to 'Editar', edit_ativo_path(s.id) %>
+  <%= button_to 'Deletar', ativo_path(s), method: :delete %>
+<% end %>
+
+<%= button_to 'Inicio', root_path, method: :get %>
+    

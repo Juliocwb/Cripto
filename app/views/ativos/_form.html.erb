@@ -1,0 +1,16 @@
+<%= form_with model: @ativo do |f| %>
+  <div>
+  <%= f.label :name, 'Nome' %>
+  <%= f.text_field :name %>
+  </div>
+  <div>
+  <%= f.label :valor, 'Valor' %>
+  <%= f.text_field :valor %>
+  </div>
+  <div>
+  <%= f.label :qtd, 'Quantidade' %>
+  <%= f.text_field :qtd %>
+  </div>
+  <%= f.submit 'Salvar' %>
+  </div>
+<% end %>
