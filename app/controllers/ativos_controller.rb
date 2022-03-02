@@ -42,4 +42,7 @@ class AtivosController < ApplicationController
     redirect_to ativos_path
   end
   
+  def calculate
+    @ativo = Ativo.find(params[:id])
+  end
 end

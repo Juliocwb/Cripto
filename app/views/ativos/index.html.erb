@@ -1,10 +1,11 @@
 <h1> test Index ativos </h1>
 
 <% @ativos.each do |s| %>
-  <%= s.name %> - <%= s.qtd %> - <%= s.valor %>
+  <%= s.name %> - <%= s.qtd %> - <%= s.valor %> - <%= s.media %>
   <%= link_to 'Editar', edit_ativo_path(s.id) %>
   <%= button_to 'Deletar', ativo_path(s), method: :delete %>
 <% end %>
 
+<div>
+<br>
 <%= button_to 'Inicio', root_path, method: :get %>
-    
