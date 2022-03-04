@@ -1,5 +1,5 @@
 <h1> Tabela de Ativos Criptomoedas</h1>
-<img https://www.gettyimages.com.br/detail/foto/ethereum-ripple-litecoin-bitcoin-dash-imagem-royalty-free/1046518034>
+
 <table>
   <thead>
     <tr>
@@ -7,7 +7,7 @@
       <th>Qtd</th>
       <th>Preço</th>
       <th>Total</th>
-      <th colspan="5"></th>
+      <th colspan="5" ></th>
       <th></th>
     </tr>
   </thead>
@@ -15,7 +15,7 @@
   <tbody>
     <% @ativos.each do |s| %>
       <tr>
-        <td><ol><%= s.name %></td>
+        <td><%= s.name %></td>
         <td><%= s.qtd %></td>
         <td>$<%= s.valor %></td>
         <td>$<%= s.media %></td>       
